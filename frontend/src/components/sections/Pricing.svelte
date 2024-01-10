@@ -1,5 +1,7 @@
-<section>
-    <div class="title">Pricing</div>
+<script>
+    import Price from '../Price/Price.svelte';
+</script>
 
-    
+<section>
+    <Price />
 </section>

@@ -1,5 +1,6 @@
 <script>
-    import Features from '../components/sections/Features.svelte'
+    import Price from '../components/Price/Price.svelte';
+import Features from '../components/sections/Features.svelte'
     import Welcome from '../components/sections/Welcome.svelte'
     import deskvid from '../desktop.mp4'
 
@@ -18,6 +19,7 @@
 
 <Welcome />
 <Features />
+<Price />
 
 
 

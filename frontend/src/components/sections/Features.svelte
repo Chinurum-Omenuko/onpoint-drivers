@@ -1,20 +1,23 @@
 <script>
+    import Card from "../Card/Card.svelte";
+import Stats from "../Stats/Stats.svelte";
+
     
 </script>
 
 <section>
     <div class="title cell">
-        <h2>First time? Dont worry..</h2>
-        <p>Whether you're a complete beginner or looking to enhance your driving abilities, we have courses designed to meet your needs.</p>
-
-        <div class="options">
-            <div class="option">1</div>
-            <div class="option">2</div>
-            <div class="option">3</div>
+        <div class="heading">
+            <h2>First time? Dont worry..</h2>
+            <p>Whether you're a complete beginner or looking to enhance your driving abilities, we have courses designed to meet your needs.</p>
         </div>
+        
+
+        <Card />
     </div>
 
 </section>
+
 
 <style lang="scss">
     section{
@@ -26,32 +29,36 @@
             gap: 1rem;
             grid-auto-rows: auto;
             grid-auto-flow: row;
-            text-align: center;
             place-items: center;
+            
             
 
             .options{
                 display: grid;
-                border: solid 2px red;
-                min-width: inherit;
-                grid-template-columns: repeat(3, 1fr);
+                border: solid 2px yellow;
+    
+            }
 
-                .option{
-                    min-width: 10rem;
-                    height: 10em;
-                    border: solid 2px orange;
-                }
+            .heading{
+                display: grid;
             }
         }
 
         @media (min-width: 850px) {
             .options{
+                grid-auto-columns: 1fr;
                 grid-auto-flow: column;
-                grid-auto-columns: auto;
-                gap: 2rem;
+            }
+            .heading{
+                grid-auto-columns: 1fr;
+                grid-auto-flow: column;
+                align-items: center;
+
             }
             
         }
+
+        
 
 
         

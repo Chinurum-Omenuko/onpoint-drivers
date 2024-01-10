@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "module": "es2020",
+      "target": "es2020",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "lib": ["dom", "esnext"],
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "baseUrl": ".",
+      "paths": {
+        "$components/*": ["src/components/*"]
+      },
+      "types": ["svelte", "jest"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules/*", "cypress/*"]
+}
+ 
