@@ -1,5 +1,5 @@
 # InFeu
-**Link to Site**: [OnPointDriversWebsite]([https://docs.github.com/articles/basic-writing-and-formatting-syntax](https://infeu.vercel.app/](https://onpoint-drivers.vercel.app/)))
+**Link to Site**: [OnPointDriversWebsite](https://infeu.vercel.app/](https://onpoint-drivers.vercel.app/))
 ## What is InFeu?
 - A web application that uses NASA'S EONET API and NewsAPI to display live and recent wildfires accross the world and wildfire related news
 
