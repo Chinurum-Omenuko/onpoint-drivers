@@ -1,26 +1,26 @@
-# InFeu
-**Link to Site**: [OnPointDriversWebsite](https://infeu.vercel.app/](https://onpoint-drivers.vercel.app/))
-## What is InFeu?
-- A web application that uses NASA'S EONET API and NewsAPI to display live and recent wildfires accross the world and wildfire related news
+# OnPoint Drivers
 
-- The Purpose of this application is to raise more awareness to wildfires especially accross North America and reduce the risks of fatality and environmental harm.
+[OnPoint Drivers Website](https://onpoint-drivers.vercel.app/)
+
+## Who are we?
+
+On Point Drivers is a local ottawa driving school that provides new drivers services to obtain their license. I have been tasked with revamping their current
+site [Onpointdrivingschool.com](https://onpoint-drivingschool.com/).
+
+
+## Features
+- New landing page and sections
+- Register Feature that prompts users to register/login, select a package then pay.(Using 0Auth2 and Stripe API)[IN PROGRESS]
 
 ## Tech stack used to build Infeu
 -- Frontend:
 - HTML/CSS
 - Javascript(Typescript)
 - Sveltekit
-- Leaflet.js
-- Tailwind.css
-- SASS
 
--- Backend:
-- Python
-- Django-rest-framework
-- Postgresql
+
 
 Sveltekit Frontend Deployed on Vercel
-Django and Postgresql Backend deployed on Render
 
 
-- link to site : 
+
