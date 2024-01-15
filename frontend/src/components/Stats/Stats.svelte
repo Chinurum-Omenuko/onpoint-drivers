@@ -2,26 +2,35 @@
 
 </script>
 
-<section>
+<div id=stats class="grid place-items-center">
     <div class="grid cell place-items-center">
         <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
     </div>
-</section>
+</div>
 
 
 <style>
+    #stats{
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
 
     .cell{
         grid-template-columns: repeat(2, 1fr);
+        background-color: aliceblue;
+        place-items: center;
+        height: 50vh;
+        min-width: 100%;
     }
 
     .cell div {
-        background: url('path/to/your/image.png') no-repeat;
+        
         height: 1em;
         width: 1em;
+        color: black;
     }
 
     .cell div:nth-child(1) { background-position: 0 0; }

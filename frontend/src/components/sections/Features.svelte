@@ -8,7 +8,6 @@ import Stats from "../Stats/Stats.svelte";
 <section>
     <div class="title cell">
         <div class="heading">
-            <h2>First time? Dont worry..</h2>
             <p>Whether you're a complete beginner or looking to enhance your driving abilities, we have courses designed to meet your needs.</p>
         </div>
         
@@ -21,10 +20,11 @@ import Stats from "../Stats/Stats.svelte";
 
 <style lang="scss">
     section{
-        background-color: black;
+        background-color: rgb(244, 186, 169);
         display: grid;
         
         .cell{
+            padding: 30px;
             display: grid;
             gap: 1rem;
             grid-auto-rows: auto;
@@ -39,8 +39,14 @@ import Stats from "../Stats/Stats.svelte";
     
             }
 
+            p{
+                color: black;
+            }
+
+
             .heading{
                 display: grid;
+                text-align: center;
             }
         }
 

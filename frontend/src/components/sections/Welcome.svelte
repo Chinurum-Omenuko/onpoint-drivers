@@ -5,6 +5,7 @@
 
 <section id="welcome">
     <div class="cell">
+        <!-- svelte-ignore a11y-missing-attribute -->
         <img src="https://images.pexels.com/photos/620335/pexels-photo-620335.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded-lg shadow-2xl">
         <div class="text">
             <h1 class="text-5xl font-bold">Who are we?</h1>
@@ -20,7 +21,8 @@
        
         justify-content: center;
         
-        
+        background-color: rgb(243 244 246);
+        color: black;
         min-height: 100vh;
 
         .cell{

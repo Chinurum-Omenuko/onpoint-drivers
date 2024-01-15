@@ -2,19 +2,19 @@
     import Footer from "../Footer/Footer.svelte";
 
 </script>
-<div class="min-h-screen py-5 min-w-screen bg-gray-50">
-    <div class="px-5">
-        <div class="mb-2">
+<div class="min-h-screen py-4 min-w-screen bg-gray-50">
+    <div class="px-4">
+        <div class="mb-1">
             <a href="#" class="text-sm text-gray-500 focus:outline-none hover:underline"><i class="text-gray-400 mdi mdi-arrow-left"></i>Back</a>
         </div>
-        <div class="mb-2">
+        <div class="mb-1">
             <h1 class="text-3xl font-bold text-gray-600 md:text-5xl">Checkout.</h1>
         </div>
-        <div class="mb-5 text-gray-400">
+        <div class="mb-4 text-gray-400">
             <a href="#" class="text-gray-500 focus:outline-none hover:underline">Home</a> / <a href="#" class="text-gray-500 focus:outline-none hover:underline">Cart</a> / <span class="text-gray-600">Checkout</span>
         </div>
     </div>
-    <div class="w-full px-5 py-10 text-gray-800 bg-white border-t border-b border-gray-200">
+    <div class="w-full px-4 text-gray-800 bg-white border-t border-b border-gray-200 py-9">
         <div class="w-full">
             <div class="items-start -mx-3 md:flex">
                 <div class="px-3 md:w-7/12 lg:pr-10">

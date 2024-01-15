@@ -33,5 +33,5 @@
 </style>
 
 
-<Navbar />
+
 <slot />

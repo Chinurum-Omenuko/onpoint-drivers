@@ -1,6 +1,6 @@
 <script lang="ts">
     import PriceCard from "./PriceCard/PriceCard.svelte";
-    import type { App } from './gloval.d.ts';
+    
 
     let package1: App.Package = {
         name: 'Basic Driving Education (Online)',

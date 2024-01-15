@@ -1,22 +1,43 @@
-<script lang="ts">
+<script>
+  import {onMount, onDestroy} from 'svelte';
+  import { browser } from '$app/environment';
+  const scrollNavBar = 60; // Amount of pixels to scroll before hiding navbar
+  let show = true;
 
+  onMount(() => {
+   if (browser) {
+     window.onscroll = () => {
+       if (window.scrollY > scrollNavBar) {
+         show = false;
+       } else {
+         show = true;
+       }
+     };
+   }
+ });
+
+ onDestroy(() => {
+   if (browser) {
+     window.onscroll = null;
+   }
+ });
 </script>
 
 
-<nav class="v">
+<nav class="v" class:v={show} class:hidden={!show}>
   <div id="logo">
-    <a class="brand" href="/">Logo</a>
+    <a class="brand" href="/">OPDS</a>
   </div>
 
 
   <div class="items">
     <li><a href="/">Home</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Contact</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
   </div>
 
   <div class="booking">
-    <a href="/">Register</a>
+    <a href="/login">Login</a>
   </div>
   
 
@@ -24,18 +45,25 @@
 
 <style lang="scss">
   
-  nav
+  .v
   {
-    position: fixed;
+    position: absolute;
     z-index: 10000;
     width: 100vw;
     display: grid;
     grid-auto-flow: column;
 
     text-align: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.2);
+    transition: all 4s ease;
+    transform: translateY(0%);
     
     
+  }
+
+  .hidden
+  {
+    transform: translateY(-100%);
   }
 
   div
