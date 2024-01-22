@@ -1,30 +1,12 @@
 <script>
   import {onMount, onDestroy} from 'svelte';
   import { browser } from '$app/environment';
-  const scrollNavBar = 60; // Amount of pixels to scroll before hiding navbar
-  let show = true;
 
-  onMount(() => {
-   if (browser) {
-     window.onscroll = () => {
-       if (window.scrollY > scrollNavBar) {
-         show = false;
-       } else {
-         show = true;
-       }
-     };
-   }
- });
-
- onDestroy(() => {
-   if (browser) {
-     window.onscroll = null;
-   }
- });
+  
 </script>
 
 
-<nav class="v" class:v={show} class:hidden={!show}>
+<nav class="v">
   <div id="logo">
     <a class="brand" href="/">OPDS</a>
   </div>
@@ -37,7 +19,7 @@
   </div>
 
   <div class="booking">
-    <a href="/login">Login</a>
+    <a href="/buy">Buy your package</a>
   </div>
   
 
