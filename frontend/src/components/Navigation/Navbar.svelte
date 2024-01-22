@@ -37,16 +37,12 @@
 
     text-align: center;
     background-color: rgb(0, 0, 0, 0.2);
-    transition: all 4s ease;
-    transform: translateY(0%);
+    
     
     
   }
 
-  .hidden
-  {
-    transform: translateY(-100%);
-  }
+ 
 
   div
   {
