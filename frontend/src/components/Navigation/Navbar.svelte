@@ -8,7 +8,7 @@
 
 <nav class="v">
   <div id="logo">
-    <a class="brand" href="/">OPDS</a>
+    <a class="brand" href="/">Logo</a>
   </div>
 
 
@@ -19,7 +19,7 @@
   </div>
 
   <div class="booking">
-    <a href="/buy">Buy your package</a>
+    <!-- <a href="/buy">Purchase package</a> -->
   </div>
   
 
